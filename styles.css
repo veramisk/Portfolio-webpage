@@ -1,0 +1,74 @@
+:root{
+    --pale:hsl(32, 32%, 92%);
+    --white: hsl(0, 0%, 100%);
+    --blue:#ADD8E6;
+  }
+  
+  body{
+    background-color: var(--pale);
+    padding-top: 60px;
+  }
+  
+  #navbar {
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      background-color: #fff; 
+      z-index: 1000; 
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  
+  .nav-links a:hover {
+    color: var(--white);
+    background-color: var(--blue);
+  }
+  
+  
+  #welcome-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f0f0f0;
+  }
+  
+  #projects {
+    text-align: center;
+    
+  }
+  @media (max-width: 600px) {
+      body {
+          font-size: 14px; 
+          padding: 10px; 
+      }
+  
+      #navbar {
+          display: flex; 
+          flex-direction: column; 
+      }
+  
+      .nav-links li {
+          margin: 5px 0;
+      }
+  
+      .project-tile {
+          margin: 10px 0; 
+      }
+  }
+  
+  
